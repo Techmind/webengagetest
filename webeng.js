@@ -974,7 +974,7 @@ webengage.setTimeout(function () {
                 widgetDomain: "http://d3701cc9l7v9a6.cloudfront.net",
                 baseStaticUrl: "http://d3701cc9l7v9a6.cloudfront.net",
                 loadSurveyWidgetUrl: function (z) {
-                    return "file:///home/ibogunov/projects/webengagetest/surv-widg.js"
+                    return "./surv-widg.js"
                 },
                 loadSurveyWidgetUrlv3: "/js/widget/we-survey-widget.js?v=232.0",
                 notificationWidgetScriptUrl: "/js/widget/we-notification-widget-v-4.1.js?v=232.0",
@@ -2359,7 +2359,6 @@ webengage.setTimeout(function () {
                                 O.scopeType = (P.scopeType ? P.scopeType : "")
                             }
                             s.widgetContainer.appendChild(Q);
-                            debugger;
                             Q.setAttribute("id", s.widgetContainerId + "-survey-content");
                             a.$SurveyWidgetInitializer = {
                                 currentInstance: O,
@@ -2368,8 +2367,7 @@ webengage.setTimeout(function () {
                                 appHost: s.surveyAppHost,
                                 width: parseInt(I, 10)
                             };
-                            var J = s.widgetDomain + (c.BrowserDetect.is_this_the_worlds_most_annoying_browser() ? s.loadSurveyWidgetUrlv3 : s.loadSurveyWidgetUrl(O.layoutAttributes.id));
-                            var J = s.loadSurveyWidgetUrl(O.layoutAttributes.id);
+                            var J = /*s.widgetDomain + */(c.BrowserDetect.is_this_the_worlds_most_annoying_browser() ? s.loadSurveyWidgetUrlv3 : s.loadSurveyWidgetUrl(O.layoutAttributes.id)); 
                             y.withWeJquery(function () {
                                 var S = a.createElement("script");
                                 S.type = "text/javascript";
