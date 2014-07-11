@@ -182,6 +182,7 @@ webengage.setTimeout(function () {
                         }
                     }
                     J.open();
+                    F = 'survey.webengage.com';
                     J.write('<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html><head><meta http-equiv="cache-control" content="max-age=0" /><meta http-equiv="cache-control" content="no-cache" /><meta http-equiv="pragma" content="no-cache" /><meta http-equiv="content-type" content="text/html; charset=utf-8"><script type="text/javascript">try{window.parent.window.name}catch(e){document.domain="' + a.domain + '";}; setTimeout(function(){if (window.attachEvent) {window.attachEvent( "onmessage", function (e) { if(e.origin !== "' + b.location.protocol + "//" + F + '"){ return; } window.parent.window.webengage.survey.callbackWrapper(e.data);},false);} else {window.addEventListener( "message", function (e) { if(e.origin !== "' + b.location.protocol + "//" + F + '"){ return; } window.parent.window.webengage.survey.callbackWrapper(e.data);},false);}},10);<\/script></head><body></body></html>');
                     J.close()
                 }, 10)
@@ -189,6 +190,7 @@ webengage.setTimeout(function () {
                 widgetCallBackFrame = webengage.IFRAMES.creatCallbackFrame(y, g, l, H)
             }
             c.alignLayout(A, g, e);
+            
             var C = c(webengage.IFRAMES.create(u + "-survey-frame", g));
             C.css({
                 height: "100%",
@@ -199,7 +201,10 @@ webengage.setTimeout(function () {
                 visibility: "visible",
                 left: "0px"
             });
-            var I = "http://" + F + "/mini-survey.html?action=edit&surveyEId=" + r + "&licenseCode=" + p + "&events=open&widgetVersion=" + webengage.util.getVersion() + (v ? "&scope=" + v : "") + (E ? "&scopeType=" + E : "") + "&width=" + j + "&pageUrl=" + encodeURIComponent(i) + (w !== undefined && w ? "&cssUrl=" + encodeURIComponent(w) : "") + "&theme=" + encodeURIComponent(s) + "&pageTitle=" + encodeURIComponent(q) + "&timesShown=" + m + "&enableCallbacks=" + d + "&defaultTracking=" + !B + "&r=" + Math.random();
+            var I =
+                //"//" + F + "//" +
+                "." +
+                "/mini-survey.html?action=edit&surveyEId=" + r + "&licenseCode=" + p + "&events=open&widgetVersion=" + webengage.util.getVersion() + (v ? "&scope=" + v : "") + (E ? "&scopeType=" + E : "") + "&width=" + j + "&pageUrl=" + encodeURIComponent(i) + (w !== undefined && w ? "&cssUrl=" + encodeURIComponent(w) : "") + "&theme=" + encodeURIComponent(s) + "&pageTitle=" + encodeURIComponent(q) + "&timesShown=" + m + "&enableCallbacks=" + d + "&defaultTracking=" + !B + "&r=" + Math.random();
             var f = {};
             if (n) {
                 f = webengage.util.copy({}, n)

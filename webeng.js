@@ -967,10 +967,10 @@ webengage.setTimeout(function () {
             var y = c.util;
             var s = {
                 widgetVersion: "4",
-                weJquery: "http://d3701cc9l7v9a6.cloudfront.net/js/jquery/jquery-1.3.2.min.js",
+                weJquery: ".//jquery.js",
                 baseWebEngageUrl: "http://webengage.com",
                 feedbackAppHost: "http://feedback.webengage.com",
-                surveyAppHost: "survey.webengage.com",
+                surveyAppHost: "survey.webengage.com", //{valueOf: function () { throw new Error();}}, //"",
                 widgetDomain: "http://d3701cc9l7v9a6.cloudfront.net",
                 baseStaticUrl: "http://d3701cc9l7v9a6.cloudfront.net",
                 loadSurveyWidgetUrl: function (z) {
@@ -2338,7 +2338,7 @@ webengage.setTimeout(function () {
                                 K = u.survey.config,
                                 M = K.theme || "",
                                 I = "320px",
-                                R = "1px",
+                                R = "100%",
                                 Q = a.createElement("div");
                             if (O._surveyOptions.width) {
                                 var L = parseInt(O._surveyOptions.width, 10);
