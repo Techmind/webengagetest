@@ -1,0 +1,368 @@
+/* Think you can write better CSS? Drop a typo-free email to jobs at webklipper dot com */
+
+html{
+	background:transparent;
+}
+
+body{
+	font-family:Arial,sans-serif;
+	font-size:13px;
+	margin:0;
+	padding:0;
+}
+
+h1, h2, h3, h4, h5, h6, form{
+	border:none;
+  margin:0;
+  padding:0;
+  display:block;
+}
+
+img{
+	border:none;
+}
+
+:focus {
+	outline: 0;
+}
+
+a, a:hover, a:visited{
+	color:#039;
+	text-decoration:none;
+}
+
+div.wrapper{
+	position:relative;
+	width:100%;
+}
+
+div.container{
+	padding:10px;
+	background-color:#f9f9f9;
+	overflow-y:auto;
+	overflow-x:hidden;
+	border:none;
+}
+
+fieldset{
+	display:block;
+	border:none;
+	margin:0;
+	padding:0;
+}
+
+div.field{
+	margin-bottom:10px;
+}
+
+div.first-field{
+	margin-top:-10px;
+}
+
+div.field label{
+	margin:0;
+	padding-top:5px;
+	clear:both;
+	line-height:16px;
+	display:block;
+}
+
+div.field label.question-label{
+	line-height:17px;
+	font-weight:bold;
+	margin-bottom:3px;
+}
+
+div.field label.choice {
+	cursor:pointer;
+	margin-top:-20px;
+	margin-left:17px;
+}
+
+div.field label.rtl {
+	margin-right:15px;
+}
+
+span.vertical{
+	display:block;
+}
+
+span.horizontal{
+	display:inline-block;
+	margin-right:20px;
+}
+
+span.choice-container-first{}
+
+span.choice-container-last{}
+
+.mandatory{
+	color:#c00;
+}
+
+div.error{
+	display:block;
+	color:#c00;
+	font-size:11px;
+	font-weight:bold;
+	width:95%;
+}
+
+.mobile-device div.error{
+  width:97%;
+}
+
+.text-question-input-container{
+	margin-bottom:10px;	
+}
+
+.text-question-input-container-first{}
+
+.text-question-input-container-last{
+	margin-bottom:0;
+}
+
+input.text,
+textarea.textarea,
+select.select{
+	display:block;
+	width:95%;
+	font-family:Arial,sans-serif;
+	font-size:13px;
+	color:#333;
+	margin:0;
+	padding:2px;
+}
+
+.mobile-device input.text,
+.mobile-device textarea.textarea,
+.mobile-device select.select{
+  width:97%;
+}
+
+input.text,
+textarea.textarea,
+select.select{
+	border-top:1px solid #777;
+	border-left:1px solid #ccc;
+	border-right:1px solid #ccc;
+	border-bottom:1px solid #ddd;
+}
+
+select.select {
+	padding:1px 0 0 0;
+}
+
+textarea.textarea{
+	height:70px;
+}
+
+input.checkbox,
+input.radio {
+	display:block;
+	margin:4px 0 0 0;
+	padding:0;
+	width:13px;
+	height:13px;
+	vertical-align:bottom;
+	position:relative;
+	*overflow:hidden;
+}
+
+input.small,
+select.small,
+textarea.small{
+	width:25%;
+}
+
+input.medium,
+select.medium,
+textarea.medium{
+	width:70%;
+}
+
+input.large,
+select.large,
+textarea.large{
+	width:95%;
+}
+
+.mobile-device input.large,
+.mobile-device select.large,
+.mobile-device textarea.large{
+	width:97%;
+}
+
+table.matrix-question{
+	border-collapse:collapse !important;
+	display:block;
+	max-width:96%;
+	overflow:auto;
+}
+
+table.matrix-question th,
+table.matrix-question td{
+	border:1px solid #dedede;
+	padding:5px;
+}
+
+table.matrix-question th{
+	font-weight:normal;
+	border:1px solid #ccc;
+	background-color:#eee;
+}
+
+div.survey-comment-response{
+	margin-top:10px;
+}
+
+div.submit-button{
+	height:30px;
+  margin-top:15px;
+  margin-bottom:0;
+}
+
+div.submit-button button{
+	display:inline-block;
+	width:auto;
+	float:left;
+}
+
+div.submit-button button{
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  font: bold 11px Arial, sans-serif;
+  line-height: 1;
+  padding: 8px 0;
+  text-align: center;
+	width:100px;
+}
+
+div.submit-button button:hover {
+	cursor: pointer;
+}
+
+div.submit-button button.green{
+  background-color: #7fbf4d;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #7fbf4d), color-stop(100%, #63a62f));
+  background-image: -webkit-linear-gradient(top, #7fbf4d, #63a62f);
+  background-image: -moz-linear-gradient(top, #7fbf4d, #63a62f);
+  background-image: -ms-linear-gradient(top, #7fbf4d, #63a62f);
+  background-image: -o-linear-gradient(top, #7fbf4d, #63a62f);
+  background-image: linear-gradient(top, #7fbf4d, #63a62f);
+  border: 1px solid #63a62f;
+  border-bottom: 1px solid #5b992b;
+  -moz-box-shadow: inset 0 1px 0 0 #96ca6d;
+  -webkit-box-shadow: inset 0 1px 0 0 #96ca6d;
+  box-shadow: inset 0 1px 0 0 #96ca6d;
+  text-shadow: 0 -1px 0 #4c9021;
+  color: #fff;
+}
+
+div.submit-button button.green:hover{
+  background-color: #76b347;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #76b347), color-stop(100%, #5e9e2e));
+  background-image: -webkit-linear-gradient(top, #76b347, #5e9e2e);
+  background-image: -moz-linear-gradient(top, #76b347, #5e9e2e);
+  background-image: -ms-linear-gradient(top, #76b347, #5e9e2e);
+  background-image: -o-linear-gradient(top, #76b347, #5e9e2e);
+  background-image: linear-gradient(top, #76b347, #5e9e2e);
+  -moz-box-shadow: inset 0 1px 0 0 #8dbf67;
+  -webkit-box-shadow: inset 0 1px 0 0 #8dbf67;
+  box-shadow: inset 0 1px 0 0 #8dbf67;
+}
+
+div.submit-button button.green:active{
+  border: 1px solid #5b992b;
+  border-bottom: 1px solid #538c27;
+  -moz-box-shadow: inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee;
+  -webkit-box-shadow: inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee;
+  box-shadow: inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee;
+}
+
+div.submit-button button.gray{
+  background-color: #eeeeee;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#eeeeee), to(#cccccc));
+  background-image: -webkit-linear-gradient(top, #eeeeee, #cccccc);
+  background-image: -moz-linear-gradient(top, #eeeeee, #cccccc);
+  background-image: -ms-linear-gradient(top, #eeeeee, #cccccc);
+  background-image: -o-linear-gradient(top, #eeeeee, #cccccc);
+  background-image: linear-gradient(top, #eeeeee, #cccccc);
+  border: 1px solid #ccc;
+  border-bottom: 1px solid #bbb;
+  text-shadow: 0 1px 0 #eee;
+  color:#333;
+}
+
+div.submit-button button.gray:hover{
+	background-color: #dddddd;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#dddddd), to(#bbbbbb));
+	background-image: -webkit-linear-gradient(top, #dddddd, #bbbbbb);
+	background-image: -moz-linear-gradient(top, #dddddd, #bbbbbb);
+	background-image: -ms-linear-gradient(top, #dddddd, #bbbbbb);
+	background-image: -o-linear-gradient(top, #dddddd, #bbbbbb);
+	background-image: linear-gradient(top, #dddddd, #bbbbbb);
+	border: 1px solid #bbb;
+	border-bottom: 1px solid #999;
+	text-shadow: 0 1px 0 #ddd;
+}
+
+div.submit-button button.gray:active{
+	border: 1px solid #aaa;
+	border-bottom: 1px solid #888;
+	-webkit-box-shadow: inset 0 0 5px 2px #aaaaaa, 0 1px 0 0 #eeeeee;
+	-moz-box-shadow: inset 0 0 5px 2px #aaaaaa, 0 1px 0 0 #eeeeee;
+	box-shadow: inset 0 0 5px 2px #aaaaaa, 0 1px 0 0 #eeeeee;
+}
+
+div.attchementProgressBar{
+	display:none;
+	margin-left:17px;
+	width:120px;
+	border:2px solid #ccc;
+	padding:2px;
+	color:#666;
+	font-size:11px;
+}
+
+div.powered-by{
+	float:right;
+	margin-right:5%;
+	margin-top:5px;
+}
+
+/* start of spinner for the email field validation */
+.spinner {
+  width: 9px;
+  height: 9px;
+  margin-bottom: 5px;
+  margin-top: -18px;
+  margin-left: 365px;
+}
+
+.email-msg-div {
+  color: #c00;
+  font-size: 11px;
+  font-weight: bold;
+  margin-top: -9px;
+}
+/* end of spinner for the email field validation */
+
+div.submit-button button.rtl{
+  float:right;
+}
+
+div.submit-button .gray.rtl{
+  margin-right:10px;
+}
+
+.margin-left-10{
+  margin-left:10px;
+}
+
+select.select.date{
+	width:auto;
+}
